@@ -18,10 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxA-Xm-fyh">
-                                <rect key="frame" x="159" y="732" width="97" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxA-Xm-fyh">
+                                <rect key="frame" x="162" y="732" width="90" height="50"/>
                                 <color key="backgroundColor" red="0.13479326859141127" green="1" blue="0.87219210895301935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="6xk-sZ-ZvK"/>
+                                    <constraint firstAttribute="height" constant="50" id="kyn-EZ-Km5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="上">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,10 +33,13 @@
                                     <action selector="moveUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzr-g0-3TX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O0-Ru-yx2">
-                                <rect key="frame" x="264" y="771" width="97" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O0-Ru-yx2">
+                                <rect key="frame" x="272" y="777" width="90" height="50"/>
                                 <color key="backgroundColor" red="0.13479326859141127" green="1" blue="0.87219210895301935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wbw-ld-4Th"/>
+                                    <constraint firstAttribute="width" constant="90" id="dEd-52-W8F"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="右">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,22 +48,13 @@
                                     <action selector="moveRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzB-LN-1fG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb5-Oc-yaK">
-                                <rect key="frame" x="159" y="808" width="97" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGt-Fd-dPN">
+                                <rect key="frame" x="52" y="777" width="90" height="50"/>
                                 <color key="backgroundColor" red="0.13479326859141127" green="1" blue="0.87219210895301935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="下">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="moveDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpn-gW-1J0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGt-Fd-dPN">
-                                <rect key="frame" x="54" y="771" width="97" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13479326859141127" green="1" blue="0.87219210895301935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Owt-wp-2wT"/>
+                                    <constraint firstAttribute="height" constant="50" id="qSy-KW-Bad"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="左">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,13 +63,41 @@
                                     <action selector="moveLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5K-s8-RK3"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q20-Rd-SDM" customClass="CustomView" customModule="tanshishe" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q20-Rd-SDM" customClass="CustomView" customModule="tanshishe" customModuleProvider="target">
                                 <rect key="frame" x="20" y="44" width="374" height="668"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.13479326859999999" green="1" blue="0.87219210899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb5-Oc-yaK">
+                                <rect key="frame" x="162" y="802" width="90" height="50"/>
+                                <color key="backgroundColor" red="0.13479326859141127" green="1" blue="0.87219210895301935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="S4g-f4-8sA"/>
+                                    <constraint firstAttribute="height" constant="50" id="dAr-Rj-05u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="下">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpn-gW-1J0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PGt-Fd-dPN" secondAttribute="bottom" constant="35" id="2da-YK-VCx"/>
+                            <constraint firstItem="yb5-Oc-yaK" firstAttribute="leading" secondItem="PGt-Fd-dPN" secondAttribute="trailing" constant="20" id="9XW-YT-Ue3"/>
+                            <constraint firstItem="6O0-Ru-yx2" firstAttribute="leading" secondItem="yb5-Oc-yaK" secondAttribute="trailing" constant="20" id="D5F-Hy-aLv"/>
+                            <constraint firstItem="yb5-Oc-yaK" firstAttribute="top" secondItem="vxA-Xm-fyh" secondAttribute="bottom" constant="20" id="VQb-RK-stI"/>
+                            <constraint firstItem="Q20-Rd-SDM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vb2-GD-BqG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q20-Rd-SDM" secondAttribute="trailing" constant="20" id="dl2-gJ-ZmO"/>
+                            <constraint firstItem="Q20-Rd-SDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fiB-0y-x18"/>
+                            <constraint firstItem="vxA-Xm-fyh" firstAttribute="top" secondItem="Q20-Rd-SDM" secondAttribute="bottom" constant="20" id="hbA-4G-xs4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yb5-Oc-yaK" secondAttribute="bottom" constant="10" id="kSg-Xx-aS7"/>
+                            <constraint firstItem="yb5-Oc-yaK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nox-iH-pdW"/>
+                            <constraint firstItem="vxA-Xm-fyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tCz-l1-87E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6O0-Ru-yx2" secondAttribute="bottom" constant="35" id="xcj-iP-erT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
